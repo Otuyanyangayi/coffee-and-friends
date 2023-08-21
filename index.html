@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Nav bar-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Books and Friends</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#the-team">The Team</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="true">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Books</a></li>
+                                <li><a class="dropdown-item" href="#">Coffee</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Pens</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active ">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Nav bar end-->
+    <h3 id="home">Home</h3>
+    <hr class="border border-danger border-2 opacity-50">
+    <!--Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Mt.-Williams-Hike-1-20.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Books</h5>
+                    <p>Friends that read together stay together</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="photo-1506869640319-fe1a24fd76dc.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sunsets</h5>
+                    <p>Chasing Sunsets with Friends </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="download.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hikes</h5>
+                    <p>Friends that hike together stay together</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Carousel-->
+    <!--the team start-->
+    <h3 id="the-team"> The Team</h3>
+    <hr class="border border-danger border-2 opacity-50">
+    <div class="container team">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="Mt.-Williams-Hike-1-20.jpg" alt="..." width="140" height="140">
+                <h4>CEO</h4>
+                <p>Grace Otuya</p>
+                <p><a class="btn btn-info" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="Mt.-Williams-Hike-1-20.jpg" alt="..." width="140" height="140">
+                <h4>MANAGER</h4>
+                <p> mollis euismod.</p>
+                <p><a class="btn btn-info" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="Mt.-Williams-Hike-1-20.jpg" alt="..." width="140" height="140">
+                <h4>CFO</h4>
+                <p> mollis euismod.</p>
+                <p><a class="btn btn-info" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+
+        </div>
+        
+
+
+        </div>
+        <!--the team end-->
+        <!--What we do -->
+        <h3> What we Do</h3>
+        <hr class="border border-danger border-2 opacity-50">
+        <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Our Book Store</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque dolorem quidem, tempora ut!</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid mx-auto" src="download.jpeg" alt="...">
+            </div>
+          </div>
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Our Book Store</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque dolorem quidem, tempora ut!</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img class="featurette-image img-fluid mx-auto" src="download.jpeg" alt="...">
+            </div>
+          </div>
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Our Book Store</h2>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque dolorem quidem, tempora ut!</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid mx-auto" src="download.jpeg" alt="...">
+            </div>
+          </div>
+
+
+    </div>
+    <h3>Contacts</h3>
+    <hr class="border border-danger border-2 opacity-50">
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    
+   
+
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+body{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #5a5a5a;
+}
+.carousel{
+margin-bottom: 4rem;
+
+}
+.carousel-caption{
+    bottom: 3rem;
+    z-index: 10;
+}
+.carousel-item{
+    height: 30rem;
+    background-color: #777;
+
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 30rem; 
+}
+.team  .col-lg-4{
+    margin-bottom: 1.5rem;
+    text-align: center;
+   }
+.team h4 {
+    font-weight: 400;
+}
+.team .col-lg-4 p{
+    margin-left: .75rem;
+    margin-right: .75rem ;
+}
+h3{
+    margin: 0 auto;
+    text-align: center;
+}
+

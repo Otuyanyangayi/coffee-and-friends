@@ -38,4 +38,8 @@ h3{
     margin: 0 auto;
     text-align: center;
 }
+button{
+    float: right;
+    background-color: black;
+}
 

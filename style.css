@@ -1,7 +1,8 @@
 body{
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #5a5a5a;
+    
+    background-color: antiquewhite;
 }
 .carousel{
 margin-bottom: 4rem;

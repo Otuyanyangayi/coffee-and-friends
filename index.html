@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Project</title>
+    <title>Books and Friends</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -27,37 +27,31 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#the-team">The Team</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Shop
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Books</a></li>
-                                <li><a class="dropdown-item" href="#">Coffee</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Pens</a></li>
-                            </ul>
-                        </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link active ">Contact Us</a>
+                            <a class="nav-link active " href="#contacts">Contact Us</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" role="search" id="searchForm">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
+    <div id="searchResults">
+        <!-- Display search results here -->
+
+    </div>
     <!--Nav bar end-->
     <h3 id="home">Home</h3>
     <hr class="border border-danger border-2 opacity-50">
     <!--Carousel-->
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque autem impedit neque quaerat quos enim quibusdam dolore ullam molestias maiores earum quia, assumenda consequatur deleniti ratione accusantium consectetur fugiat!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse atque autem impedit neque quaerat quos enim
+        quibusdam dolore ullam molestias maiores earum quia, assumenda consequatur deleniti ratione accusantium
+        consectetur fugiat!</p>
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -109,77 +103,166 @@
     <div class="container team">
         <div class="row">
             <div class="col-lg-4">
-                <img class="rounded-circle" src="Mt.-Williams-Hike-1-20.jpg" alt="..." width="140" height="140">
+                <img class="rounded-circle" src="images (1).png" alt="..." width="140" height="140">
                 <h4>CEO</h4>
-                <p>Grace Otuya</p>
-                <p><a class="btn btn-info" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="Mt.-Williams-Hike-1-20.jpg" alt="..." width="140" height="140">
-                <h4>MANAGER</h4>
-                <p> mollis euismod.</p>
-                <p><a class="btn btn-info" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="Mt.-Williams-Hike-1-20.jpg" alt="..." width="140" height="140">
-                <h4>CFO</h4>
-                <p> mollis euismod.</p>
-                <p><a class="btn btn-info" href="#" role="button">View details &raquo;</a></p>
-            </div>
+                <p> Matthew </p>
 
-
-        </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    View Details >>
         
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam enim sit, libero rerum qui error omnis laudantium obcaecati. Reprehenderit rem odit consequuntur magnam, laudantium aliquid asperiores beatae molestias esse modi.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="istockphoto-526947869-612x612.jpg" alt="..." width="140" height="140">
+                <h4>MANAGER</h4>
+                <p>Shimon</p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    View Details >>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem eligendi, amet nesciunt, asperiores voluptatem fuga temporibus, praesentium corporis provident obcaecati enim mollitia labore? Minus consequuntur, vitae ratione facere aperiam vero.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="images.png" alt="..." width="140" height="140">
+                <h4>CFO</h4>
+                <p> Grace</p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    View Details >>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">More Details</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quos possimus illum nemo placeat hic autem? Dolorem totam similique vitae impedit quia iusto tempora provident natus deleniti at, perferendis expedita?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>
-        <!--the team end-->
-        <!--What we do -->
-        <h3> What we Do</h3>
-        <hr class="border border-danger border-2 opacity-50">
-        <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Our Book Store</h2>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque dolorem quidem, tempora ut!</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-fluid mx-auto" src="download.jpeg" alt="...">
-            </div>
-          </div>
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">Our Book Store</h2>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque dolorem quidem, tempora ut!</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-              <img class="featurette-image img-fluid mx-auto" src="download.jpeg" alt="...">
-            </div>
-          </div>
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading">Our Book Store</h2>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque dolorem quidem, tempora ut!</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-fluid mx-auto" src="download.jpeg" alt="...">
-            </div>
-          </div>
+
 
 
     </div>
-    <h3>Contacts</h3>
+    <hr>
+    <!--the team end-->
+    <!--What we do -->
+    <h3> What we Do</h3>
+    <hr class="border border-danger border-2 opacity-50">
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Our Book Store</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas
+                quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque
+                dolorem quidem, tempora ut!</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="book store.jpeg" alt="...">
+        </div>
+    </div>
+    <hr>
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Our Book Club</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas
+                quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque
+                dolorem quidem, tempora ut!</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="bookclub.jpeg" alt="...">
+        </div>
+    </div>
+    <hr>
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Our Coffee Store</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas eveniet ducimus voluptas
+                quisquam, officia tenetur quae consequatur ipsa esse qui laborum omnis, blanditiis cum doloremque
+                dolorem quidem, tempora ut!</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="coffee store.jpeg" alt="...">
+        </div>
+    </div>
+
+
+    </div>
+    <hr>
+
+    <h3 id="contacts">Contacts</h3>
     <hr class="border border-danger border-2 opacity-50">
     <footer class="container">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam odit error hic eligendi! Est, voluptatibus! Magnam, commodi qui perspiciatis nam minus fugiat reiciendis itaque dolorum eaque, sapiente consectetur deserunt?</p>
-        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ullam odit error hic eligendi! Est,
+            voluptatibus! Magnam, commodi qui perspiciatis nam minus fugiat reiciendis itaque dolorum eaque, sapiente
+            consectetur deserunt?</p>
+        <button ><a href="#">Back to top</a></button>
         <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-    
-   
+    </footer>
 
 
-   
 
+
+
+    <script src="js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
